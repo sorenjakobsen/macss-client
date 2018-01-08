@@ -10,7 +10,7 @@ The package is installed via the package manager of [Atom](https://atom.io/).
 
 Please see https://github.com/sorenjakobsen/macss.
 
-## Authors
+## Author
 
 Søren Jakobsen.
 
