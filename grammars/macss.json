@@ -1,0 +1,93 @@
+{
+    "scopeName": "source.macss",
+    "name": "Macs/s",
+    "fileTypes": ["macss"],
+    "patterns": [
+
+        {
+            "match": "^i[Q-Z]",
+            "name": "string.quoted"
+        },
+
+        {
+            "match": "^(i[0-9]|p[0-9][0-9]?)",
+            "name": "entity.name.function"
+        },
+
+        {
+            "match": "^(i[a-z]|s[0-9][0-9]?)",
+            "name": "variable"
+        },
+
+        {
+            "begin": "^p[a-z]",
+            "beginCaptures": {
+              "0": {
+                "name": "entity.name.function"
+              }
+            },
+            "end": "$",
+            "endCaptures": {
+              "0": {
+                "name": ""
+              }
+            },
+            "name": "",
+            "patterns": [
+                {
+                    "match": "\\b[srvopclht]\\b",
+                    "name": "variable"
+                },
+                {
+                    "match": "-.*$",
+                    "name": "comment"
+                },
+                {
+                    "match": "\\/",
+                    "name": "constant.numeric"
+                }
+            ]
+        },
+
+        {
+            "begin": "^s[a-z]",
+            "beginCaptures": {
+              "0": {
+                "name": "variable"
+              }
+            },
+            "end": "$",
+            "endCaptures": {
+              "0": {
+                "name": ""
+              }
+            },
+            "name": "",
+            "patterns": [
+                {
+                    "match": "\\b[srvopclht]\\b",
+                    "name": "entity.name.function"
+                },
+                {
+                    "match": "-.*$",
+                    "name": "comment"
+                },
+                {
+                    "match": "\\/",
+                    "name": "constant.numeric"
+                }
+            ]
+        },
+
+        {
+            "match": "-.*$",
+            "name": "comment"
+        },
+
+        {
+            "match": "\\/",
+            "name": "constant.numeric"
+        }
+
+    ]
+}

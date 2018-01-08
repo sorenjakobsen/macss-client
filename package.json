@@ -1,0 +1,20 @@
+{
+  "name": "macss-client",
+  "main": "./lib/macss",
+  "version": "1.0.0",
+  "description": "Macs/s client for Atom.",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/macss",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "setupStatusBar"
+      }
+    }
+  }
+}
