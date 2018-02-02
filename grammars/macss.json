@@ -5,7 +5,7 @@
     "patterns": [
 
         {
-            "match": "^i[Q-Z]",
+            "match": "^i[A-Z]",
             "name": "string.quoted"
         },
 
