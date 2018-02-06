@@ -1,7 +1,6 @@
 {
   "atom-workspace": {
     "alt-l": "macss:loadSamples",
-    "alt-m": "macss:loadScore",
-    "alt-k": "macss:clearScore"
+    "alt-d": "macss:loadScore"
   }
 }

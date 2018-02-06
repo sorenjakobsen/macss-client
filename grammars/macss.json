@@ -5,22 +5,7 @@
     "patterns": [
 
         {
-            "match": "^i[A-Z]",
-            "name": "string.quoted"
-        },
-
-        {
-            "match": "^(i[0-9]|p[0-9][0-9]?)",
-            "name": "entity.name.function"
-        },
-
-        {
-            "match": "^(i[a-z]|s[0-9][0-9]?)",
-            "name": "variable"
-        },
-
-        {
-            "begin": "^p[a-z]",
+            "begin": "^ *[a-z]",
             "beginCaptures": {
               "0": {
                 "name": "entity.name.function"
@@ -35,22 +20,22 @@
             "name": "",
             "patterns": [
                 {
-                    "match": "\\b[srvopclht]\\b",
+                    "match": "\\b[vrsop]",
                     "name": "variable"
                 },
                 {
-                    "match": "-.*$",
+                    "match": "!.*$",
                     "name": "comment"
                 },
                 {
                     "match": "\\/",
-                    "name": "constant.numeric"
+                    "name": "entity.name.function"
                 }
             ]
         },
 
         {
-            "begin": "^s[a-z]",
+            "begin": "^ *[0-2]",
             "beginCaptures": {
               "0": {
                 "name": "variable"
@@ -65,28 +50,19 @@
             "name": "",
             "patterns": [
                 {
-                    "match": "\\b[srvopclht]\\b",
-                    "name": "entity.name.function"
-                },
-                {
-                    "match": "-.*$",
+                    "match": "!.*$",
                     "name": "comment"
                 },
                 {
                     "match": "\\/",
-                    "name": "constant.numeric"
+                    "name": "entity.name.function"
                 }
             ]
         },
 
         {
-            "match": "-.*$",
+            "match": "!.*$",
             "name": "comment"
-        },
-
-        {
-            "match": "\\/",
-            "name": "constant.numeric"
         }
 
     ]
