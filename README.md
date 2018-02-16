@@ -12,7 +12,7 @@ Please see https://github.com/sorenjakobsen/macss.
 
 ## Author
 
-Søren Jakobsen
+[Søren Jakobsen](mailto:skj@jakobsen-it.dk)
 
 ## Acknowledgments
 
