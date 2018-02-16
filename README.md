@@ -2,7 +2,7 @@
 
 This Atom package adds syntax highlighting to Macs/s (.macss) files and also compiles Macs/s files for execution by the Macs/s server.
 
-### Installing
+## Installing
 
 The package is installed via the package manager of [Atom](https://atom.io/).
 
@@ -12,8 +12,8 @@ Please see https://github.com/sorenjakobsen/macss.
 
 ## Author
 
-Søren Jakobsen.
+Søren Jakobsen
 
 ## Acknowledgments
 
-The code for handling OSC is based on code by Fair Oaks Labs, Inc..
+The code for handling OSC is based on code by Fair Oaks Labs, Inc.
